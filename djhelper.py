@@ -31,11 +31,9 @@ import subprocess
 import shutil
 import distutils.dir_util
 
-from config import DEBUG
-
 
 # Help notice
-VALID_COMMANDS = "Valid commands: debug, proj, app, startproject, startapp"
+VALID_COMMANDS = "Valid commands: proj, app, startproject, startapp"
 
 # Location of resources
 RESOURCES_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "resources")
@@ -155,14 +153,6 @@ def include_urls(project_name, app_name):
 
 
 if __name__ == "__main__":
-    if sys.argv[1] == 'debug':
-        if DEBUG:
-            pass
-        else:
-            echo_progress("DEBUG is False, set it to True to enable it.")
-        exit(0)
-
-
     if len(sys.argv) < 3:
         print("Usage: python djhelper.py COMMAND ARGS")
         print(VALID_COMMANDS)
@@ -254,8 +244,10 @@ if __name__ == "__main__":
         
         echo_progress("End of proj creation")
         print()
-        echo_progress("Now, cd {project_name} then source venv/Scripts/activate")
-        echo_progress("To create a superuser, run: python manage.py createsuperuser")
+        echo_progress("Now, run these commands:")
+        echo_progress(f"cd {project_name}")
+        echo_progress("source venv/Scripts/activate")
+        echo_progress("python manage.py createsuperuser")
         
     elif command == 'app' or command == 'startapp':
         app_names = sys.argv[2:]
