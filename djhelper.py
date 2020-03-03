@@ -1,4 +1,6 @@
-#!python.exe
+#!winpty python.exe
+
+# Remove winpty above if not using Git Bash
 
 # Script that extends Django's manage.py
 # - creates the virtualenv
@@ -33,7 +35,7 @@ from config import DEBUG
 
 
 # Help notice
-VALID_COMMANDS = "Valid commands: debug, proj, app, [startproject], [startapp]"
+VALID_COMMANDS = "Valid commands: debug, proj, app, startproject, startapp"
 
 # Location of resources
 RESOURCES_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "resources")
