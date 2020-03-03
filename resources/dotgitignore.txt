@@ -1,0 +1,21 @@
+# Emacs
+
+*~
+\#*
+.\#*
+
+
+# Python
+
+__pycache__/
+
+
+# Virtualenv
+
+venv/
+
+
+# Django
+
+secrets.py
+db.sqlite3

@@ -1,0 +1,2 @@
+CREATE_POSTGRES = False
+DEBUG = True

@@ -1,0 +1,5 @@
+[  ] Register/Login views
+[  ] Django REST Framework serialization
+[  ] logs app with model (user, message, timestamp)
+[  ] copy requirements.txt to project_dir and pip install -r req (Dj 2.2.6 LTS)
+[  ] del tests.py and add tests/ dir with __init__, test_models, forms, views
