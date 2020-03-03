@@ -17,5 +17,5 @@ venv/
 
 # Django
 
-secrets.py
+mysecrets.py
 db.sqlite3

@@ -1,10 +1,6 @@
 # djhelper
 
-Utility to auto-generate typical configuration files for Django 2.2
-
-## Setup
-
-Edit `secrets_sample.py` with your credentials and save it as `secrets.py`
+Utility to auto-generate typical configuration files for Django (latest version)
 
 ## Usage
 
@@ -12,9 +8,8 @@ Edit `secrets_sample.py` with your credentials and save it as `secrets.py`
 
 * Virtualenv in `venv/`
 * `.gitignore`
-* `runserver, migrate, makemigrations` files for tab completion in the command line
-* Moves the `SECRET_KEY` to `secrets.py`
-* Configures `settings.py` to use a PostgreSQL database
+* `runserver, migrate, makemigrations` empty files for tab completion in the command line
+* Moves the `SECRET_KEY` to `mysecrets.py`
 * Creates a `ui` app with a `static` directory and a placeholder HTML file
 * Migrates default apps
 * Creates an initial Git repository
